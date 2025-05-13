@@ -84,9 +84,13 @@ predicted_cancer_types.png: Breakdown of predictions
 
 model_report.pdf: Summary with accuracy + confusion matrix
 
-📎 Sample Output Preview
+📎 [Sample Output Preview](https://docs.google.com/document/d/1FTj9zicWCrXGLfr9Ac-Q79WPvpC11W6uh_BPy-LVj7E/edit?usp=sharing)
 
 ## 📄 License
 This project is licensed under the MIT License.
+
+
+
+
 
 
