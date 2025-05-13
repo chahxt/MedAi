@@ -1,8 +1,8 @@
 
-🧠 MedAI - Cancer Prediction Using AI
+## 🧠 MedAI - Cancer Prediction Using AI
 MedAI is an intelligent machine learning-based tool designed to predict cancer types using health data. It leverages multiple classification algorithms to analyze structured datasets (like CSVs) and identify the most accurate model for prediction.
 
-🎯 Objective
+## 🎯 Objective
 MedAI automates the following:
 
 ✅ Reads medical/health data
@@ -10,7 +10,7 @@ MedAI automates the following:
 ✅ Visualizes and summarizes results
 ✅ Generates a professional PDF report
 
-🤖 Machine Learning Models Used
+## 🤖 Machine Learning Models Used
 The following models are trained and evaluated:
 
 🔹 Logistic Regression
@@ -23,7 +23,7 @@ The following models are trained and evaluated:
 
 ⚡ XGBoost
 
-📊 What It Generates
+## 📊 What It Generates
 After training, the tool produces:
 
 📈 model_comparison.png: Bar graph comparing model accuracies
@@ -34,11 +34,12 @@ After training, the tool produces:
 
 🧬 predicted_cancer_types.png: Count of predicted cancer types
 
-🗂️ Project Structure
+## 🗂️ Project Structure
 bash
 Copy
 Edit
 MedAI/
+
 ├── data/
 │   └── dataset.csv               # Input health dataset
 ├── main.py                       # Main script (training + reporting)
@@ -48,8 +49,8 @@ MedAI/
 ├── model_report.pdf              # Auto-generated PDF report
 ├── requirements.txt              # Required Python packages
 └── README.md                     # Project documentation
-⚙️ How to Use
-📌 Step 1: Install Dependencies
+## ⚙️ How to Use
+## 📌 Step 1: Install Dependencies
 Run this command to install all required libraries:
 
 bash
@@ -59,20 +60,20 @@ pip install -r requirements.txt
 📌 Step 2: Add Your Dataset
 Place your CSV dataset in the data/ folder.
 
-📝 Dataset Format Guidelines:
+## 📝 Dataset Format Guidelines:
 
 The target column (e.g., PULMONARY_DISEASE) should contain labels like "YES" or "NO".
 
 The feature columns should include health indicators (e.g., age, symptoms, habits).
 
-📌 Step 3: Run the Project
+## 📌 Step 3: Run the Project
 To start training and generating outputs, run:
 
 bash
 Copy
 Edit
 python main.py
-📌 Step 4: Review Your Outputs
+## 📌 Step 4: Review Your Outputs
 You will get the following:
 
 model_comparison.png: Visual comparison of all model accuracies
@@ -85,7 +86,7 @@ model_report.pdf: Summary with accuracy + confusion matrix
 
 📎 Sample Output Preview
 
-📄 License
+## 📄 License
 This project is licensed under the MIT License.
 
 
