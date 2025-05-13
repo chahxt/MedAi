@@ -1,120 +1,91 @@
-<!-- # PulmoPredict - Cancer Prediction Using AI
 
-## Objective
+🧠 MedAI - Cancer Prediction Using AI
+MedAI is an intelligent machine learning-based tool designed to predict cancer types using health data. It leverages multiple classification algorithms to analyze structured datasets (like CSVs) and identify the most accurate model for prediction.
 
-PulmoPredict is a machine learning-based tool that helps predict cancer types from health data. The tool accepts structured datasets (e.g., CSV) containing various health indicators, trains multiple AI models, and evaluates their performance.
+🎯 Objective
+MedAI automates the following:
 
-The tool compares models such as:
-- Logistic Regression
-- Random Forest
-- Support Vector Machine (SVM)
-- K-Nearest Neighbors (KNN)
-- XGBoost
+✅ Reads medical/health data
+✅ Trains and compares various ML models
+✅ Visualizes and summarizes results
+✅ Generates a professional PDF report
 
-It generates a bar graph comparing model performance, a confusion matrix, and a PDF report with the results.
+🤖 Machine Learning Models Used
+The following models are trained and evaluated:
 
-## Project Structure
+🔹 Logistic Regression
 
-PulmoPredict/
-├── data/
-│ └── dataset.csv # Your input dataset
-├── models/ # (Optional, if modularized)
-├── main.py # Main script
-├── utils.py # Helper functions (optional)
-├── requirements.txt # Required libraries
-├── README.md # Project description
-├── model_comparison.png # Bar graph comparing model accuracy
-├── confusion_matrix.png # Confusion matrix plot
-└── model_report.pdf # Final PDF report
+🌲 Random Forest
 
+🧭 Support Vector Machine (SVM)
 
-## How to Use
+👥 K-Nearest Neighbors (KNN)
 
-1. Install the required libraries using `pip install -r requirements.txt`.
-2. Place your CSV dataset in the `data/` folder.
-3. Run the project using the command `python main.py`.
-4. The output will include:
-   - Model comparison bar graph (`model_comparison.png`).
-   - Confusion matrix (`confusion_matrix.png`).
-   - PDF report (`model_report.pdf`).
+⚡ XGBoost
 
-## License
+📊 What It Generates
+After training, the tool produces:
 
-MIT License. -->
+📈 model_comparison.png: Bar graph comparing model accuracies
 
+🧾 model_report.pdf: PDF summarizing results and confusion matrix
 
-# MedAI - Cancer Prediction Using AI
+📉 confusion_matrix.png: Heatmap for the best-performing model
 
-## Objective
+🧬 predicted_cancer_types.png: Count of predicted cancer types
 
-**MedAI** is a machine learning-based tool designed to predict cancer types from health data. It accepts structured datasets (e.g., CSV) containing various health indicators, trains multiple AI models, and evaluates their performance.
-
-The tool compares the following machine learning models:
-- **Logistic Regression**
-- **Random Forest**
-- **Support Vector Machine (SVM)**
-- **K-Nearest Neighbors (KNN)**
-- **XGBoost**
-
-It then generates:
-- A bar graph comparing the accuracy of each model.
-- A confusion matrix for the best-performing model.
-- A PDF report summarizing the model performance and results.
-
-## Project Structure
-
-The project is organized as follows:
-
-MedAI/
-├── data/
-│ └── dataset.csv # Your input dataset (CSV format)
-├── models/ # (Optional, if you want to modularize models)
-├── main.py # Main script for model training and evaluation
-├── utils.py # Helper functions (optional, if needed)
-├── requirements.txt # List of required libraries
-├── README.md # Project description and usage instructions
-├── model_comparison.png # Bar graph comparing model accuracy
-├── confusion_matrix.png # Confusion matrix plot for the best model
-├── predicted_cancer_types.png # Bar graph for predicted cancer types
-└── model_report.pdf # Final PDF report with results and analysis
-
-shell
+🗂️ Project Structure
+bash
 Copy
 Edit
+MedAI/
+├── data/
+│   └── dataset.csv               # Input health dataset
+├── main.py                       # Main script (training + reporting)
+├── model_comparison.png          # Bar chart of model accuracies
+├── confusion_matrix.png          # Confusion matrix (best model)
+├── predicted_cancer_types.png    # Bar chart of cancer predictions
+├── model_report.pdf              # Auto-generated PDF report
+├── requirements.txt              # Required Python packages
+└── README.md                     # Project documentation
+⚙️ How to Use
+📌 Step 1: Install Dependencies
+Run this command to install all required libraries:
 
-## How to Use
+bash
+Copy
+Edit
+pip install -r requirements.txt
+📌 Step 2: Add Your Dataset
+Place your CSV dataset in the data/ folder.
 
-### Step 1: Install Dependencies
-Install the required libraries by running the following command:
-<!-- ```bash
-pip install -r requirements.txt -->
-## Step 2: Prepare the Dataset
-Place your CSV dataset in the data/ folder. The dataset should have the following structure:
+📝 Dataset Format Guidelines:
 
-The target variable (e.g., cancer type) should be labeled as Target or a similar name.
+The target column (e.g., PULMONARY_DISEASE) should contain labels like "YES" or "NO".
 
-The feature columns should contain health-related indicators (age, smoking status, test results, etc.).
+The feature columns should include health indicators (e.g., age, symptoms, habits).
 
-## Step 3: Run the Project
-Execute the main script to train the models, evaluate them, and generate outputs:
+📌 Step 3: Run the Project
+To start training and generating outputs, run:
 
 bash
 Copy
 Edit
 python main.py
+📌 Step 4: Review Your Outputs
+You will get the following:
+
+model_comparison.png: Visual comparison of all model accuracies
+
+confusion_matrix.png: For the best-performing model
+
+predicted_cancer_types.png: Breakdown of predictions
+
+model_report.pdf: Summary with accuracy + confusion matrix
+
+📎 Sample Output Preview
+
+📄 License
+This project is licensed under the MIT License.
 
 
-## Step 4: Review the Outputs
-You can view the outputs exepcted from this project from this link -https://docs.google.com/document/d/1FTj9zicWCrXGLfr9Ac-Q79WPvpC11W6uh_BPy-LVj7E/edit?usp=sharing
-After running the script, the following files will be generated:
-
-model_comparison.png: A bar graph comparing the accuracy of each model.
-
-confusion_matrix.png: A confusion matrix for the best-performing model.
-
-predicted_cancer_types.png: A bar plot showing the predicted cancer types.
-
-model_report.pdf: A PDF report summarizing the model results, including performance metrics and the confusion matrix.
-
-## License
-MIT License
