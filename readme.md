@@ -105,6 +105,7 @@ python main.py
 
 
 ## Step 4: Review the Outputs
+You can view the outputs exepcted from this project from this link -https://docs.google.com/document/d/1FTj9zicWCrXGLfr9Ac-Q79WPvpC11W6uh_BPy-LVj7E/edit?usp=sharing
 After running the script, the following files will be generated:
 
 model_comparison.png: A bar graph comparing the accuracy of each model.
