@@ -47,6 +47,7 @@ MedAI/
 ├── confusion_matrix.png          # Confusion matrix (best model)
 ├── predicted_cancer_types.png    # Bar chart of cancer predictions
 ├── model_report.pdf              # Auto-generated PDF report
+├── predictions_output.csv       # CSV of actual vs predicted labels
 ├── requirements.txt              # Required Python packages
 └── README.md                     # Project documentation
 ## ⚙️ How to Use
@@ -83,6 +84,8 @@ confusion_matrix.png: For the best-performing model
 predicted_cancer_types.png: Breakdown of predictions
 
 model_report.pdf: Summary with accuracy + confusion matrix
+
+predictions_output.csv: Full actual vs predicted labels (for the best model)
 
 📎 [Sample Output Preview](https://docs.google.com/document/d/1FTj9zicWCrXGLfr9Ac-Q79WPvpC11W6uh_BPy-LVj7E/edit?usp=sharing)
 
