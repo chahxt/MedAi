@@ -85,6 +85,15 @@ def print_accuracy_comparison(results):
         bar = '█' * int(accuracy * 10)
         print(f"{model:<20} | {bar:<20} {accuracy*100:.1f}%")
 
+# Save predictions to CSV file
+def save_predictions_to_csv(actual, predicted, filename="predictions_output.csv"):
+    df = pd.DataFrame({
+        'Actual': actual,
+        'Predicted': predicted
+    })
+    df.to_csv(filename, index=False)
+    print(f"\n✅ Predictions saved to {filename}")
+
 # Main function
 def main():
     # Load data
@@ -132,10 +141,9 @@ def main():
     # Generate PDF report
     generate_pdf_report(results, confusion_matrix(y, best_y_pred))
 
-    # Print all predictions
-    print("\nPredictions on Entire Dataset:")
-    for i, (actual, pred) in enumerate(zip(y, best_y_pred)):
-        print(f"Sample {i+1}: Actual = {actual}, Predicted = {pred}")
+    # Save predictions to CSV
+    save_predictions_to_csv(y, best_y_pred)
 
 if __name__ == "__main__":
     main()
+
