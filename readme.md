@@ -93,6 +93,8 @@ predictions_output.csv: Full actual vs predicted labels (for the best model)
 This project is licensed under the MIT License.
 
 
+Made BY Chahat Jain
+
 
 
 
